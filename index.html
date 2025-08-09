@@ -22,33 +22,38 @@
 
             <!--Middle panel (files)-->
             <nav class = "file-explorer">
-                <h2>Project</h2>
-                <ul>
-                    <li>Writing</li>
-                    <li>Characters</li>
-                    <li>World</li>
-                    <li>Outline</li>
-                    <li>Research</li>
-                </ul>
+                <div class = "tree-header">
+                    Project
+                </div>
+                <div class = "tree-scroll">
+                    <ul id = "tree-root" class = "tree-list">
+                        Use JS to insert folders/files here
+                    </ul>
+                </div>
             </nav>
 
-            <!--Main panel (tabs)-->
+            <!--Main workspace-->
             <main class = "tabbed-editor">
-                <div class = "tab-bar">
-                    <div class = "tab active">
-                        Chapter 1
+
+                <!--Tab row-->
+                <header class = "workspace-header">
+                    <div class = "nav-arrows">
+                        <button class = "icon-btn" aria-label="Back">‹</button>
+                        <button class="icon-btn" aria-label="Forward">›</button>
                     </div>
-                    <div class = "tab">
-                        Elara Moonfall
+
+                    <div id = "tab-strip" class = "tab-strip">
+                        <button class = "tab-new" aria-label = "New tab">+</button>
                     </div>
-                </div>
-                <div class = "tab-content">
-                    <h1>Welcome to TaleForge</h1>
-                    <p>
-                        This is the writing editor area. Select a file to begin
-                        writing.
-                    </p>
-                </div>
+
+                    <div class = "header-actions"></div>
+                </header>
+
+                <!--Content area-->
+                <section class = "tab-content">
+                    <div id = "path-bar">JS sets file/folder path</div>
+                    <div id = "content" class = "content-surface">JS renders an active view here</div>
+                </section>
             </main>
         </div>
     </body>

@@ -20,7 +20,13 @@ ul{
     padding-left: 0;
 }
 
-h2{
-    font-size: 16px;
-    margin-bottom: 8px;
+:root{
+    --border: rgb(229,231,235);
+    --muted: rgb(107,114,128);
+    --muted-2: rgb(71,85,105);
+    --bg: white;
+    --bg-soft: rgb(246,247,249);
+    --hover: rgba(0,0,0,0.04);
+    --active: rgba(59,130,246,0,1);
+    --blue: rgb(59,130,246);
 }
