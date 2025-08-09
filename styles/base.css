@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background: rgb(248,250,252);
+    color: rgb(17, 24, 39);
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+h2{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
