@@ -20,14 +20,40 @@
                 <div class = "sidebar-icon"><img src = "assets/icons/settings.png"></div>
             </aside>
 
-            <!--Middle panel (files)-->
+            <!--Middle panel (file explorer)-->
             <nav class = "file-explorer">
                 <div class = "tree-header">
                     Project
                 </div>
                 <div class = "tree-scroll">
                     <ul id = "tree-root" class = "tree-list">
-                        Use JS to insert folders/files here
+                        <!--Dummy folders-->
+                        <li class = "folder open">Writing
+                            <ul>
+                                <li class = "file">Chapter 1</li>
+                                <li class = "file">Chapter 2</li>
+                                <li class = "file">Chapter 3</li>
+                            </ul>
+                        </li>
+
+                        <li class = "folder">Characters
+                            <ul>
+                                <li class = "file">Protagonist</li>
+                                <li class = "file">Antagonist</li>
+                            </ul>
+                        </li>
+
+                        <li class = "folder open">World
+                            <ul>
+                                <li class = "file">Lands</li>
+                                <li class = "file">Factions</li>
+                                <li class = "file">History</li>
+                            </ul>
+                        </li>
+
+                        <li class = "folder">Outline</li>
+                        <li class = "folder">Research</li>
+                        <!--Dummy-->
                     </ul>
                 </div>
             </nav>
@@ -43,6 +69,16 @@
                     </div>
 
                     <div id = "tab-strip" class = "tab-strip">
+                        <!--Dummy tabs-->
+                        <button class = "tab active">
+                            <span class = "tab-title">Chapter 2</span>
+                            <span class = "tab-close" aria-label = "Close">×</span>
+                        </button>
+                        <button class = "tab inactive">
+                            <span class = "tab-title">Protagonist</span>
+                            <span class = "tab-close" aria-label = "Close">×</span>
+                        </button>
+                        <!---->
                         <button class = "tab-new" aria-label = "New tab">+</button>
                     </div>
 
@@ -51,8 +87,22 @@
 
                 <!--Content area-->
                 <section class = "tab-content">
-                    <div id = "path-bar">JS sets file/folder path</div>
-                    <div id = "content" class = "content-surface">JS renders an active view here</div>
+                    <!--Dummy path-->
+                    <div id = "path-bar">
+                        <span>Writing</span>
+                        <span class = "sep">/</span>
+                        <span class = "current">Chapter 2</span>
+                    </div>
+                    <!--Dummy-->
+
+                    <!--Dummy Body-->
+                    <div class = "content" class = "content-surface">
+                        <h1>Chapter 2</h1>
+                        <p style = "margin-top: 12px;">
+                            Dummy text to check spacing and layout. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <!--Dummy-->
                 </section>
             </main>
         </div>

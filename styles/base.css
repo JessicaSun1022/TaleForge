@@ -27,6 +27,6 @@ ul{
     --bg: white;
     --bg-soft: rgb(246,247,249);
     --hover: rgba(0,0,0,0.04);
-    --active: rgba(59,130,246,0,1);
+    --active: rgba(59,130,246,0,10);
     --blue: rgb(59,130,246);
 }

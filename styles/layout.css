@@ -71,17 +71,25 @@
     padding: 4px 6px 12px 6px;
 }
 
+.tree-list{
+    margin: 0;
+    padding: 0;
+}
+
 .tree-list li{
-    height: 28px;
-    display: flex;
-    align-items: center;
-    padding: 0 8px 0 26px;
+    display: block;
+    position: relative;
+    min-height: 28px;
+    line-height: 28px;
+    padding: 0 8px 0 28px;
     margin: 2px 0;
     color: var(--muted-2);
     border-radius: 6px;
     cursor: pointer;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: ellipsis;
     transition: background-color 0.15s ease, color 0.15s ease, padding-left 0.15s ease;
-    position: relative;
 }
 
 .tree-list li::before{
