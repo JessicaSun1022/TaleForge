@@ -4,6 +4,7 @@
         <title>TaleForge</title>
         <link rel = "stylesheet" href = "styles/base.css">
         <link rel = "stylesheet" href = "styles/layout.css">
+        <script src = "scripts/main.js" defer></script>
     </head>
 
     <body>
@@ -95,14 +96,34 @@
                     </div>
                     <!--Dummy-->
 
-                    <!--Dummy Body-->
-                    <div class = "content" class = "content-surface">
-                        <h1>Chapter 2</h1>
-                        <p style = "margin-top: 12px;">
-                            Dummy text to check spacing and layout. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                    <!--Toolbar-->
+                    <div class = "editor-toolbar">
+                        <button class = "tool" data-cmd = "bold"><b>B</b></button>
+                        <button class = "tool" data-cmd = "italic"><i>I</i></button>
+                        <button class = "tool" data-cmd = "underline"><u>U</u></button>
+                        <span class = "tool-sep">/</span>
+                        <button class = "tool" data-cmd = "insertUnorderedList">• List</button>
+                        <button class = "tool" data-cmd = "insertOrderedList">1. List</button>
+                        <span class = "tool-sep">/</span>
+                        <span class = "tool" id = "btn-undo" title = "Undo">↺</span>
+                        <span class = "tool" id = "btn-redo" title = "Redo">↻</span>
+                        <span class = "tool-sep">/</span>
+                        <button class = "tool" id = "btn-download">⤓</button>
                     </div>
-                    <!--Dummy-->
+
+                    <!--Editor surface-->
+                    <div id = "content" class = "content content-surface">
+                        <div id = "editor" class = "editor" contenteditable = "true">
+                            <h1>Chapter 2</h1>
+                            <p>Start writing here...</p>
+                        </div>
+                    </div>
+
+                    <div class = "statusbar">
+                        <span id = "wc">Words: 3</span>
+                        <span class = "dot">•</span>
+                        <span id = "cc">Chars: 19</span>
+                    </div>
                 </section>
             </main>
         </div>

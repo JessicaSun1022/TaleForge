@@ -114,6 +114,14 @@
     color: rgb(17, 24, 39);
 }
 
+.tree-list li.folder > ul{
+    display:none;
+}
+
+.tree-list li.folder.open > ul{
+    display: block;
+}
+
 .tree-list li.folder::before{
     width: 0;
     height: 0;
@@ -144,7 +152,7 @@
 .workspace-header{
     display: grid;
     grid-template-columns: auto 1fr auto;
-    align-items: end;
+    align-items: center;
     gap: 10px;
     height: 44px;
     padding: 0 10px;
@@ -179,7 +187,7 @@
 /* Tabs */
 .tab-strip{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 6px;
     height: 100%;
 }
@@ -264,4 +272,97 @@
 
 .tab-content::-webkit-scrollbar-thumb:hover{ 
     background: rgb(156, 163, 175);
+}
+
+/*Toolbar*/
+.editor-toolbar{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px;
+    margin: 10px 0; 
+    background: var(--bg);
+}
+
+.tool{
+    height: 26px;
+    padding: 0 8px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: rgb(55,65,81);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.tool:hover{
+    background: var(--hover);
+}
+
+.tool-sep{
+    width: 1px;
+    height: 16px;
+    background: var(--border);
+    display: inline-block;
+    margin: 0 4px;
+}
+
+/*Editor surface*/
+.content-surface{
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.editor{
+    flex: 1;
+    overflow: auto;
+    padding: 18px 22px;
+    line-height: 1.6;
+    outline: none;
+}
+
+.editor h1{
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.editor h2{
+    font-size: 22px;
+    margin: 18px 0 8px 0;
+}
+
+.editor p{
+    margin: 10px 0;
+}
+
+/*Status bar*/
+.statusbar{
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid var(--border);
+    padding: 0 10px;
+    color: var(--muted);
+    background: var(--bg);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.statusbar .dot{
+    color: rgb(203,213,225);
+}
+
+#path-bar .sep{
+    margin: 0 8px;
+    color: rgb(156,163,175);
+}
+#path-bar .current{
+    color: rgb(31,41,55);
 }
